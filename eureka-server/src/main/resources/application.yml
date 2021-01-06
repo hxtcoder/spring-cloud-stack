@@ -1,1 +1,14 @@
-server:  port: 8761spring:  application:    name: eureka-server # 给应用起名eureka:  client:    register-with-eureka: false # 不把自己注册到Eureka    fetch-registry: false # 不获取注册中心的服务列表    service-url:      defaultZone: http://127.0.0.1:8761/eureka # eureka的地址  server:    eviction-interval-timer-in-ms: 10000 # 设置驱逐周期为10秒    enable-self-preservation: false # 关闭自我保护
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-server # 给应用起名
+eureka:
+  client:
+    register-with-eureka: false # 不把自己注册到Eureka
+    fetch-registry: false # 不获取注册中心的服务列表
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka # eureka的地址
+  server:
+    eviction-interval-timer-in-ms: 10000 # 设置驱逐周期为10秒
+    enable-self-preservation: false # 关闭自我保护
