@@ -1,14 +1,1 @@
-server:
-  port: 10086
-spring:
-  application:
-    name: eureka-server # ¸øÓ¦ÓÃÆğÃû
-eureka:
-  client:
-    register-with-eureka: false # ²»°Ñ×Ô¼º×¢²áµ½Eureka
-    fetch-registry: false # ²»»ñÈ¡×¢²áÖĞĞÄµÄ·şÎñÁĞ±í
-    service-url:
-      defaultZone: http://127.0.0.1:10086/eureka # eurekaµÄµØÖ·
-  server:
-    eviction-interval-timer-in-ms: 10000 # ÉèÖÃÇıÖğÖÜÆÚÎª10Ãë
-    enable-self-preservation: false # ¹Ø±Õ×ÔÎÒ±£»¤
+server:  port: 8761spring:  application:    name: eureka-server # ç»™åº”ç”¨èµ·åeureka:  client:    register-with-eureka: false # ä¸æŠŠè‡ªå·±æ³¨å†Œåˆ°Eureka    fetch-registry: false # ä¸è·å–æ³¨å†Œä¸­å¿ƒçš„æœåŠ¡åˆ—è¡¨    service-url:      defaultZone: http://127.0.0.1:8761/eureka # eurekaçš„åœ°å€  server:    eviction-interval-timer-in-ms: 10000 # è®¾ç½®é©±é€å‘¨æœŸä¸º10ç§’    enable-self-preservation: false # å…³é—­è‡ªæˆ‘ä¿æŠ¤
